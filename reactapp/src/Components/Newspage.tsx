@@ -2,7 +2,7 @@
 import React from 'react'
 import axios from 'axios';
 
-// types.ts
+
 export interface TopRead {
     id: string;
     title: string;
@@ -63,4 +63,4 @@ const NewsPage = () => {
     )
 }
 
-export default NewsPage
+export default NewsPage;

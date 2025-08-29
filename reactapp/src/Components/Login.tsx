@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault(); // prevent page refresh
 
         try {
-            const response = await axios.post("http://localhost:3000/api/login", {
+            const response = await axios.post("https://vishal-test-production.up.railway.app/api/login", {
                 email,
                 password
             });

@@ -1,7 +1,7 @@
-import TaskForm from './Components/Taskform'
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Taskpage from './Components/Taskpage';
+import NewsPage from './Components/Newspage';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Taskpage />} />
+          <Route path='/news' element={<NewsPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>

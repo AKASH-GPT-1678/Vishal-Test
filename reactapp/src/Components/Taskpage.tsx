@@ -31,7 +31,7 @@ const Taskpage = () => {
         }
 
         try {
-            const response = await axios.get("http://localhost:3000/api/mytaskS", {
+            const response = await axios.get("https://vishal-test-production.up.railway.app/api/mytasks", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -57,7 +57,7 @@ const Taskpage = () => {
         if(!token){
             return;
         }
-        const  API_URL = "http://localhost:3000/api/deletetask";
+        const  API_URL = "https://vishal-test-production.up.railway.app/api/deletetask";
         try {
             if (!taskId || !token) {
                 throw new Error("Task ID and token are required");
