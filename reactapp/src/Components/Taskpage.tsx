@@ -19,9 +19,7 @@ export interface Task {
 }
 
 const Taskpage = () => {
-    const { register, handleSubmit,
-        watch,
-        formState: { errors }, } = useForm();
+
     const [showForm, setshowForm] = React.useState(false);
     const token = localStorage.getItem("token");
     const [savedTasks, setSavedTasks] = React.useState<Task[]>([]);
