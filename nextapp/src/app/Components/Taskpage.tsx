@@ -23,7 +23,7 @@ const Taskpage = () => {
         watch,
         formState: { errors }, } = useForm();
     const [showForm, setshowForm] = React.useState(false);
-    const token = localStorage.getItem("token");
+    const token = localStorage?.getItem("token");
     const [savedTasks, setSavedTasks] = React.useState<Task[]>([]);
     const loadTasks = async (token: string) => {
         if (!token) {
@@ -54,10 +54,10 @@ const Taskpage = () => {
 
     const deleteTask = async (taskId: string) => {
         const token = localStorage.getItem("token");
-        if(!token){
+        if (!token) {
             return;
         }
-        const  API_URL = "https://vishal-test-production.up.railway.app/api/deletetask";
+        const API_URL = "https://vishal-test-production.up.railway.app/api/deletetask";
         try {
             if (!taskId || !token) {
                 throw new Error("Task ID and token are required");
