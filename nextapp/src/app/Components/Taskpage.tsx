@@ -70,10 +70,10 @@ const Taskpage = () => {
             });
 
             if (response.status === 200) {
-                console.log("Task deleted successfully:", response.data);
+                console.log("Task deleted", response.data);
                 return response.data;
             } else {
-                console.warn("Unexpected response:", response);
+                console.log("Unexpected response:", response);
             }
         } catch (error: any) {
             console.error("Error deleting task:", error.response?.data || error.message);

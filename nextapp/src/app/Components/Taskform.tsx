@@ -1,3 +1,4 @@
+"use client"
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -75,7 +76,7 @@ export default function TaskForm() {
       <input placeholder="Title" {...register("title")} className="p-2" />
       {errors.title && <span className="text-red-500">{errors.title.message}</span>}
 
-      <textarea placeholder="Description" {...register("description")} />
+      <textarea placeholder="Description" {...register("description")} className="p-2"/>
 
       <select {...register("status")} className="p-2">
         <option value="pending">Pending</option>
