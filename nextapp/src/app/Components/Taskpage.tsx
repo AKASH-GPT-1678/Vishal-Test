@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useForm } from "react-hook-form";
 import React from "react";
 import TaskForm from "./Taskform";
